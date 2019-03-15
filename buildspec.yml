@@ -1,9 +1,10 @@
 version: 0.1
 
+
 phases:
   build:
     commands:
       - mvn clean package
 artifacts:
   files: 
-    - target/FrontController.war
+    - target/ERS-0.0.1-SNAPSHOT.war
