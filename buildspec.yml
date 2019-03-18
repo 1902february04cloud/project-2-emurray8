@@ -9,4 +9,4 @@ phases:
       - mvn clean package
 artifacts:
   files: 
-    - /usr/share/tomcat8/webapps/ROOT/ERS-0.0.1-SNAPSHOT.war
+    - target/ERS-0.0.1-SNAPSHOT.war
