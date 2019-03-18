@@ -4,8 +4,9 @@ version: 0.1
 phases:
   build:
     commands:
-      - mvn install:install-file -Dfile="/home/ec2-user/Jars/ojdbc7.jar" -DgroupId="com.oracle" -DartifactId="ojdbc7" -Dversion="12.1.0" -Dpackaging="jar"
+      - wget https://s3.amazonaws.com/project2-ers-dependencies/ojdbc7.jar
+      - mvn install:install-file -Dfile="ojdbc7.jar" -DgroupId="com.oracle" -DartifactId="ojdbc7" -Dversion="12.1.0" -Dpackaging="jar"
       - mvn clean package
 artifacts:
   files: 
-    - target/ERS-0.0.1-SNAPSHOT.war
+    - target/ERS.war
