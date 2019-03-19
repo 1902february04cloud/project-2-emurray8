@@ -9,4 +9,4 @@ phases:
       - mvn clean package
 artifacts:
   files: 
-    - target/ERS-0.0.1-SNAPSHOT.war
+    - target/ERS.war
